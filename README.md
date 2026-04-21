@@ -1,6 +1,6 @@
-## 📖 README.md
+📖 README.md
 
-````markdown
+markdown
 # 🏦 Online Banking API Testing Project
 
 ## 📌 Course Details
