@@ -1,3 +1,6 @@
+## 📖 README.md
+
+````markdown
 # 🏦 Online Banking API Testing Project
 
 ## 📌 Course Details
@@ -87,3 +90,101 @@ Download: https://www.postman.com/downloads/
 ### 4️⃣ Install Newman
 ```bash
 npm install -g newman newman-reporter-htmlextra
+````
+
+### 5️⃣ Run via Newman
+
+```bash
+newman run OnlineBanking_Postman_Collection.json \
+--reporters cli,htmlextra \
+--reporter-htmlextra-export ./newman_report.html
+```
+
+---
+
+## 📊 Test Execution Summary
+
+| Module              | Total | Passed | Failed |
+| ------------------- | ----- | ------ | ------ |
+| Authentication      | 4     | 4      | 0      |
+| Account Management  | 4     | 4      | 0      |
+| Fund Transfer       | 3     | 3      | 0      |
+| Transaction History | 3     | 3      | 0      |
+| **Total**           | 14    | 14     | 0      |
+
+---
+
+## 🐞 Defects Identified
+
+| ID      | Description                         | Severity |
+| ------- | ----------------------------------- | -------- |
+| DEF-001 | Self-transfer not blocked           | High     |
+| DEF-002 | Invalid password returns 200        | Medium   |
+| DEF-003 | Out-of-range pagination returns 200 | Low      |
+
+---
+
+## ⚖️ Strengths
+
+* Easy API testing with GUI
+* Supports JavaScript-based assertions
+* Fast execution using Newman
+* HTML reporting support
+
+---
+
+## ⚠️ Limitations
+
+* No UI testing
+* Cannot simulate concurrent users
+* Limited security testing
+
+---
+
+## 🔄 Postman vs JMeter
+
+| Feature     | Postman            | JMeter       |
+| ----------- | ------------------ | ------------ |
+| Purpose     | Functional Testing | Load Testing |
+| UI          | Easy               | Complex      |
+| Concurrency | ❌                  | ✅            |
+| Scripting   | JavaScript         | Java/Groovy  |
+
+---
+
+## 🚀 Future Improvements
+
+* Integrate JMeter for load testing
+* Add OWASP ZAP for security testing
+* Use CSV-based data-driven testing
+* Connect to real backend APIs
+
+---
+
+## 🎤 Viva Preparation
+
+Be ready to:
+
+* Run a test case (TC-AUTH-01)
+* Modify test inputs (e.g., transfer amount)
+* Explain failed cases (self-transfer issue)
+* Explain testing techniques (BVA, EP, DT, ST)
+
+---
+
+## 📎 Files Included
+
+* `OnlineBanking_Postman_Collection.json`
+* `newman_report.html`
+* `README.md`
+
+---
+
+## 👩‍💻 Author
+
+**Priyanshu Bisht**
+B.Tech CSE (Data Science)
+Bennett University
+
+
+
